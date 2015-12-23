@@ -2,9 +2,8 @@ js-syntax-online
 
 Simple online SQL editor with syntax hightlight in HTML+JavaScript
 
-INSTALL: Copy scripts/ and styles/ to this dir,
-and create SQL-Editor.html
-URL: https://github.com/syntaxhighlighter/syntaxhighlighter
+INSTALL: Copy scripts/ and styles/ to the directory, that contains SQL-Editor.html
+Download page for syntax-library: https://github.com/syntaxhighlighter/syntaxhighlighter
 
 This is the answer for
 
