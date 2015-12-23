@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251" />
+<title>Hello SyntaxHighlighter</title>
+<link type="text/css" rel="stylesheet" href="styles/shCoreDefault.css"/>
+
+<script type="text/javascript" src="scripts/shCore.js"></script>
+<script type="text/javascript" src="scripts/shBrushPython.js"></script>
+<script type="text/javascript" src="scripts/shBrushSql.js"></script>
+
+<script>
+
+function Parse() {
+  document.getElementById("output").innerHTML = 
+  "<pre class='brush:sql'>"
+  + document.getElementById("input").value
+  + "</pre>";
+  SyntaxHighlighter.highlight();
+}
+
+document.addEventListener("DOMContentLoaded", function () { 
+  SyntaxHighlighter.all();
+});
+
+</script>
+
+</head>
+
+<body style="background: white; font-family: Helvetica">
+
+<h1>SQL</h1>
+
+<table>
+<tr valign="top">
+<td>
+<textarea cols="40" rows="25" onkeyup="Parse()" id="input">
+</textarea>
+</td>
+
+<td>
+<pre class="brush:sql;" id="output">
+SELECT *
+FROM TEST
+</pre>
+</td>
+</tr>
+</table>
+
+</html>
